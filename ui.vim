@@ -8,7 +8,12 @@ let s:outline_preview_bufnr = 0
 " Check <Tab> and <CR>
 function! coc#ui#check_pum_keymappings(trigger) abort
   if a:trigger !=# 'none'
+"
+"
+"Solucion empieza aqui, remover <tab> y debe quedar asi
     for key in ['<cr>', '<c-y>', '<s-tab>']
+"Solucion termina aqui
+"
       let arg = maparg(key, 'i', 0, 1)
       if get(arg, 'expr', 0)
         let rhs = get(arg, 'rhs', '')
