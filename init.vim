@@ -79,8 +79,15 @@ if has("patch-8.1.1564")
 else
   set signcolumn=yes
 endif
-
-" Use tab for trigger completion with characters ahead and navigate.
+"
+"
+"
+"La Solucion empieza desde aqui
+"
+"
+"
+"
+"" Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
 inoremap <silent><expr> <S-TAB>
@@ -88,7 +95,13 @@ inoremap <silent><expr> <S-TAB>
       \ <SID>check_back_space() ? "\<S-TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-n>" : "\<C-h>"
-
+"
+"
+"
+"La Solucion Termina Aqui
+"
+"
+"
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
